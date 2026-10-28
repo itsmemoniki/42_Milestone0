@@ -6,11 +6,11 @@
 /*   By: msouza-c <msouza-c@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/27 12:42:56 by msouza-c          #+#    #+#             */
-/*   Updated: 2026/10/27 12:58:54 by msouza-c         ###   ########.fr       */
+/*   Updated: 2026/10/28 14:31:06 by msouza-c         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isdigit(char c)
+int	ft_isdigit(int c)
 {
 	if ('0' <= c && c <= '9')
 		return (1);
@@ -21,6 +21,6 @@ int	ft_isdigit(char c)
 // #include <stdio.h>
 // int main(void)
 // {
-// 	char c = 'a';
+// 	char c = ' ';
 // 	printf("%i\n", ft_isdigit(c));
 // }
