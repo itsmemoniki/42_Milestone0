@@ -20,9 +20,9 @@ int	ft_isalnum(int c)
 		return (0);
 }
 
-#include <stdio.h>
-int main(void)
-{
-	int c = '0';
-	printf("%i\n", ft_isalnum(c));
-}
+// #include <stdio.h>
+// int main(void)
+// {
+// 	int c = '0';
+// 	printf("%i\n", ft_isalnum(c));
+// }
