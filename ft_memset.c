@@ -6,7 +6,7 @@
 /*   By: msouza-c <msouza-c@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/27 13:07:22 by msouza-c          #+#    #+#             */
-/*   Updated: 2026/10/27 13:23:35 by msouza-c         ###   ########.fr       */
+/*   Updated: 2026/10/30 17:40:57 by msouza-c         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	*ft_memset(void *str, int c, size_t n)
 {
-	size_t  		i;
+	size_t			i;
 	unsigned char	*ptr;
 
 	ptr = (unsigned char *)str;

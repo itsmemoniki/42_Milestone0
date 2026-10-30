@@ -6,7 +6,7 @@
 /*   By: msouza-c <msouza-c@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/27 12:54:40 by msouza-c          #+#    #+#             */
-/*   Updated: 2026/10/28 14:56:24 by msouza-c         ###   ########.fr       */
+/*   Updated: 2026/10/30 17:44:39 by msouza-c         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,13 +14,11 @@
 
 size_t	ft_strlen(const char *str)
 {
-	unsigned int len;
+	unsigned int	len;
 
 	len = 0;
 	while (str[len])
-	{
 		len++;
-	}
 	return (len);
 }
 // #include <stdio.h>
