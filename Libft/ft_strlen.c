@@ -6,25 +6,24 @@
 /*   By: msouza-c <msouza-c@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/27 12:54:40 by msouza-c          #+#    #+#             */
-/*   Updated: 2026/10/27 12:59:42 by msouza-c         ###   ########.fr       */
+/*   Updated: 2026/10/30 17:44:39 by msouza-c         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_strlen(char *str)
+#include "libft.h"
+
+size_t	ft_strlen(const char *str)
 {
-	int len;
+	unsigned int	len;
 
 	len = 0;
 	while (str[len])
-	{
 		len++;
-	}
 	return (len);
 }
-
 // #include <stdio.h>
 // int main(void)
 // {
 // 	char *str = 'hello';
 // 	printf("%i\n", ft_strlen(str));
-// }
+// } 

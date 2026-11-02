@@ -6,11 +6,11 @@
 /*   By: msouza-c <msouza-c@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/27 12:40:32 by msouza-c          #+#    #+#             */
-/*   Updated: 2026/10/27 12:58:19 by msouza-c         ###   ########.fr       */
+/*   Updated: 2026/10/28 14:28:26 by msouza-c         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isalpha(char c)
+int	ft_isalpha(int c)
 {
 	if (('a' <= c && c <= 'z') || ('A' <= c && c <= 'Z'))
 		return (1);
@@ -21,6 +21,6 @@ int	ft_isalpha(char c)
 // #include <stdio.h>
 // int main(void)
 // {
-// 	char c = 'a';
+// 	char c = 'Z';
 // 	printf("%i\n", ft_isalpha(c));
 // }

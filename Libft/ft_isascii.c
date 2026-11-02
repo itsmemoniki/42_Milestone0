@@ -6,11 +6,11 @@
 /*   By: msouza-c <msouza-c@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/27 12:49:19 by msouza-c          #+#    #+#             */
-/*   Updated: 2026/10/27 12:58:39 by msouza-c         ###   ########.fr       */
+/*   Updated: 2026/10/28 14:48:54 by msouza-c         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isascii(char c)
+int	ft_isascii(int c)
 {
 	if (0 <= c && c <= 127)
 		return (1);
@@ -21,6 +21,6 @@ int	ft_isascii(char c)
 // #include <stdio.h>
 // int main(void)
 // {
-// 	char c = 'a';
+// 	char c = 'z';
 // 	printf("%i\n", ft_isascii(c));
 // }

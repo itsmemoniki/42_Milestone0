@@ -6,11 +6,11 @@
 /*   By: msouza-c <msouza-c@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/27 12:52:35 by msouza-c          #+#    #+#             */
-/*   Updated: 2026/10/27 12:59:10 by msouza-c         ###   ########.fr       */
+/*   Updated: 2026/10/28 14:49:44 by msouza-c         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isprint(char c)
+int	ft_isprint(int c)
 {
 	if (32 <= c && c <= 126)
 		return (1);
@@ -21,6 +21,6 @@ int	ft_isprint(char c)
 // #include <stdio.h>
 // int main(void)
 // {
-// 	char c = 'a';
+// 	char c = ';';
 // 	printf("%i\n", ft_isprint(c));
 // }
