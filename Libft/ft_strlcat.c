@@ -34,6 +34,6 @@ int main(void)
 	char dest2[100] = "Hello ";
 	char src2[] = "World!";
 
-	printf("%zu dest: %s\n", ft_strlcat(dest1, src1, 25), dest1);
-	printf("%zu dest: %s\n", strlcat(dest2, src2, 25), dest2);
+	printf("%zu dest: %s\n", ft_strlcat(dest1, src1, 2), dest1);
+	printf("%zu dest: %s\n", strlcat(dest2, src2, 2), dest2);
 }
