@@ -1,5 +1,4 @@
 #include "libft.h"
-#include <stdio.h>
 
 int	ft_strncmp(const char s1[], const char s2[], size_t n)
 {
@@ -18,7 +17,6 @@ int	ft_strncmp(const char s1[], const char s2[], size_t n)
 		{
 			return (*s1 - *s2);
 		}
-
 	}
 	return (*s1 - *s2);
 }
@@ -28,10 +26,10 @@ int	ft_strncmp(const char s1[], const char s2[], size_t n)
 
 int main(void)
 {
-	char* s1 = "Moniki is me";
-    char* s2 = "Monikiisme";
+	char* s1 = "abc";
+    char* s2 = "abcdef";
 
-	int value = strncmp(s1, s2, 7);
+	int value = ft_strncmp(s1, s2, 6);
 	printf("%i\n", value);
 	return (0);
 }
