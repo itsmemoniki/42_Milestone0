@@ -3,15 +3,30 @@
 void	*ft_memchr(const void *s, int c, size_t n)
 {
 	unsigned char	*ptr;
+	size_t	i;
 
 	ptr = (unsigned char *)s;
-
+	i = 0;
+	while (i < n)
+	{
+		if (*(ptr + i) == (unsigned char)c)
+			return ((void *)(ptr + i));
+		i++;
+	}
+	return (NULL);
 }
 
-#include <stdio.h>
-#include <string.h>
+// #include <stdio.h>
+// #include <string.h>
 
-int main(void)
-{
-	return (0);
-}
+// int main(void)
+// {
+// 	char str[] = "\0";
+
+// 	char *result = memchr(str, 'o', sizeof(str));
+
+// 	if (result != NULL) {
+//     	printf("string: %s\n", result);
+// }
+// 	return (0);
+// }
