@@ -10,8 +10,9 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 	i = 0;
 	while (haystack[i] && i < len)
 	{
-		j = i;
-		while (haystack[j] == needle[j])
+		j = 0;
+		while (haystack[j + i] == needle[j] && i + j < len && 
+			haystack[i + j] && needle[j])
 		{
 			j++;
 			if (!needle[j])
@@ -22,16 +23,16 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 	return (NULL);
 }
 
-#include <string.h>
-#include <stdio.h>
+// #include <string.h>
+// #include <stdio.h>
 
-int main(void)
-{
-	char *largestring = "Foo Bar Baz";
-	char *smallstring = "Bar";
-	char *ptr;
+// int main(void)
+// {
+// 	char *largestring = "Foo Bar Baz";
+// 	char *smallstring = "Bar";
+// 	char *ptr;
 
-	ptr = strnstr(largestring, smallstring, 7);
-	printf("%s\n", ptr);
-	return (0);
-}
+// 	ptr = strnstr(largestring, smallstring, 7);
+// 	printf("%s\n", ptr);
+// 	return (0);
+// }
