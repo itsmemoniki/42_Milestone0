@@ -1,5 +1,4 @@
 #include "libft.h"
-#include <stdlib.h>
 
 void	*ft_calloc(size_t n, size_t size)
 {
@@ -12,24 +11,23 @@ void	*ft_calloc(size_t n, size_t size)
 	return (ptr);
 }
 
-#include <stdio.h>
+// #include <stdio.h>
+// int main(void)
+// {
+// 	int n = 5;
+// 	int *ptr = calloc(n, sizeof(int));
+// 	int i = 0;
 
-int main(void)
-{
-	int n = 5;
-	int *ptr = calloc(n, sizeof(int));
-	int i = 0;
-
-    if (ptr == NULL) {
-        printf("Memory allocation failed\n");
-        return 1;
-    }
-    while (i < n) 
-	{
-        printf("%d ", ptr[i]);
-		i++;
-    }
-	printf("\n");
-    free(ptr);
-	return (0);
-}
+//     if (ptr == NULL) {
+//         printf("Memory allocation failed\n");
+//         return 1;
+//     }
+//     while (i < n) 
+// 	{
+//         printf("%d ", ptr[i]);
+// 		i++;
+//     }
+// 	printf("\n");
+//     free(ptr);
+// 	return (0);
+// }
