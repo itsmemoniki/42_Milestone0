@@ -21,6 +21,6 @@ clean:
 				$(RM) $(OBJS)
 fclean:			clean
 				$(RM) $(NAME)
-rebuid:			fclean $(NAME)	
+re:			fclean $(NAME)	
 
 .PHONY:			all clean fclean rebuid

@@ -4,6 +4,8 @@ void	*ft_calloc(size_t n, size_t size)
 {
 	void	*ptr;
 	
+	if (size && n > __SIZE_MAX__ / size)
+		return (NULL);
 	ptr = (void *)malloc(n * size);
 	if (!ptr)
 		return (NULL);
