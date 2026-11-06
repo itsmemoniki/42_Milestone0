@@ -20,3 +20,12 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	subs[i] = '\0';
 	return (subs);
 }
+
+// #include <stdio.h>
+// int main(void)
+// {
+// 	const char *str = "Hello monki bla bla!";
+// 	char *subs = ft_substr(str, 6, 5);
+// 	printf("%s\n", subs);
+// 	return (0);
+// }
