@@ -2,12 +2,23 @@
 
 char	*ft_strtrim(char const *s1, char const *set)
 {
-	char	*str;
+	char	*trimmed;
 	size_t	len;
 
 	len = ft_strlen(s1) - 2 * ft_strlen(set);
-	str = (char *) malloc(len * sizeof(char));
-	if (!str)
+	trimmed = (char *) malloc(len * sizeof(char));
+	if (!trimmed)
 		return (NULL);
+	while (*set)
+		s1++;
+	while (*s1)
+		*trimmed++ = *s1++;
+	return (trimmed);
 	
+}
+
+#include <stdio.h>
+int main(void)
+{
+	return (0);
 }
