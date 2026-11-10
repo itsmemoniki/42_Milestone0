@@ -4,18 +4,20 @@
 char	*ft_strjoin(char const *s1, char const *s2)
 {
 	char	*str;
+	char	*ptr;
 	size_t	strsize;
 
-	strsize = ft_strlen(s1) + ft_strlen(s1);
+	strsize = ft_strlen(s1) + ft_strlen(s2);
 	str = (char *) malloc((strsize + 1) * sizeof(char));
 	if (!str)
 		return (NULL);
+	ptr = str;
 	while (*s1)
-		*str++ = *s1++;
+		*ptr++ = *s1++;
 	while (*s2)
-		*str++ = *s2++;
-	*str = '\0';
-	return (str - strsize);
+		*ptr++ = *s2++;
+	*ptr = '\0';
+	return (str);
 }
 
 // #include <stdio.h>
