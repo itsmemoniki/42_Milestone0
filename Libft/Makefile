@@ -4,7 +4,7 @@ SRCS			= 	ft_isalnum.c  ft_isprint.c  ft_memmove.c  ft_strlcat.c  ft_strnstr.c \
 					ft_strlen.c  ft_tolower.c ft_calloc.c  ft_isdigit.c  ft_memcpy.c  \
 					ft_strdup.c   ft_strncmp.c  ft_toupper.c \
 					ft_substr_extra.c  ft_strjoin_extra.c  ft_strtrim_extra.c  \
-
+					ft_split_extra.c  \
 
 OBJS			= $(SRCS:.c=.o)
 
