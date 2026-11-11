@@ -24,22 +24,21 @@ size_t	count_digits(long n)
 char	*make_str(char *str, long n)
 {
 	size_t	size;
+	long	nbr;
 
+	nbr = labs(n);
 	size = count_digits(n);
 	str[size] = '\0';
 	if (n == 0)
 		str[0] = '0';	
-	if (n < 0)
+	while (size)
 	{
-		str[0] = '-';
-		n = n * -1;
-	}
-	while (size - 1)
-	{
-		str[size - 1] = (n % 10) + '0';
-		n = n / 10;
 		size--;
+		str[size] = (nbr % 10) + '0';
+		nbr = nbr / 10;
 	}
+	if (n < 0)
+		str[0] = '-';
 	return (str);
 }
 
@@ -58,7 +57,7 @@ char	*ft_itoa(int n)
 
 // int	main(void)
 // {
-// 	long n = 0;
+// 	long n = -2147483648;
 // 	printf("%s\n", ft_itoa(n));
 // 	return (0);
 // }
