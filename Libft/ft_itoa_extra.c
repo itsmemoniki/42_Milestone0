@@ -1,5 +1,4 @@
 #include "libft.h"
-#include <stdio.h>
 
 size_t	count_digits(long n)
 {
@@ -55,6 +54,7 @@ char	*ft_itoa(int n)
 	return (str);
 }
 
+// #include <stdio.h>
 // int	main(void)
 // {
 // 	long n = -2147483648;
