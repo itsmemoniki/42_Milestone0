@@ -6,7 +6,7 @@ SRCS			= 	ft_isalnum.c  ft_isprint.c  ft_memmove.c  ft_strlcat.c  ft_strnstr.c \
 					ft_substr_extra.c  ft_strjoin_extra.c  ft_strtrim_extra.c  \
 					ft_split_extra.c  ft_itoa_extra.c  ft_strmapi_extra.c  \
 					ft_striteri_extra.c  ft_putchar_fd_extra.c  ft_putstr_fd_extra.c  \
-					
+					ft_putendl_fd_extra.c  ft_putnbr_fd_extra.c  \
 
 OBJS			= $(SRCS:.c=.o)
 
