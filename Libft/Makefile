@@ -7,7 +7,9 @@ SRCS			= 	ft_isalnum.c  ft_isprint.c  ft_memmove.c  ft_strlcat.c  ft_strnstr.c \
 					ft_split_extra.c  ft_itoa_extra.c  ft_strmapi_extra.c  \
 					ft_striteri_extra.c  ft_putchar_fd_extra.c  ft_putstr_fd_extra.c  \
 					ft_putendl_fd_extra.c  ft_putnbr_fd_extra.c \
-					ft_lstnew_list.c  ft_lstadd_front_list.c  \
+					ft_lstnew_list.c  ft_lstadd_front_list.c  ft_lstsize_list.c  \
+					ft_lstlast_list.c  ft_lstadd_back_list.c  ft_lstdelone_list.c  \
+					
 
 OBJS			= $(SRCS:.c=.o)
 
