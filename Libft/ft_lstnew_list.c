@@ -13,11 +13,12 @@ t_list	*ft_lstnew(void *content)
 }
 
 // #include <stdio.h>
-// int main(void)
+// int main(int argc, char *argv[])
 // {
-// 	char *str = "hello";
+// 	(void)argc;
+
 // 	t_list	*node;
-// 	node = ft_lstnew(str);
-// 	printf("%s\n", (char *)node->content);
+// 	node = ft_lstnew(argv[1]);
+// 	printf("%s.\n", (char *)node->content);
 // 	return (0);
 // }
