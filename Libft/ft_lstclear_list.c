@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_lstclear_list.c                                 :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: msouza-c <msouza-c@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2026/11/18 19:09:05 by msouza-c          #+#    #+#             */
+/*   Updated: 2026/11/18 19:24:52 by msouza-c         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "libft.h"
 
 void	ft_lstclear(t_list **lst, void (*del)(void *))
@@ -30,7 +42,8 @@ void	ft_lstclear(t_list **lst, void (*del)(void *))
 // 	char *s2 = "world";
 // 	t_list	*lst = ft_lstnew(s1);
 // 	ft_lstadd_back(&lst, ft_lstnew(s2));
-// 	printf("Before deletion: %s %s\n", (char *)lst->content, (char *)lst->next->content);
+// 	printf("Before deletion: %s %s\n", (char *)lst->content,
+//			 (char *)lst->next->content);
 // 	test2
 // 	t_list	*lst = NULL;
 // 	ft_lstclear(&lst, del);

@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_lstiter_list.c                                  :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: msouza-c <msouza-c@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2026/11/18 19:09:48 by msouza-c          #+#    #+#             */
+/*   Updated: 2026/11/18 19:25:29 by msouza-c         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "libft.h"
 
 void	ft_lstiter(t_list *lst, void (*f)(void *))
@@ -16,7 +28,6 @@ void	ft_lstiter(t_list *lst, void (*f)(void *))
 // void printstr(void *str)
 // {
 // 	char *str1;
-	
 // 	str1 = (char *)str;
 // 	while(*str1)
 // 	{

@@ -1,8 +1,20 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_striteri_extra.c                                :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: msouza-c <msouza-c@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2026/11/18 19:15:29 by msouza-c          #+#    #+#             */
+/*   Updated: 2026/11/18 19:29:14 by msouza-c         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "libft.h"
 
 void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 {
-	unsigned int   	i;
+	unsigned int	i;
 
 	i = 0;
 	if (!s || !f)
@@ -20,7 +32,6 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 // 	if (*c >= 'a' && *c <= 'z')
 // 		*c -= 32;
 // }
-
 // #include <stdio.h>
 // int main(void)
 // {
