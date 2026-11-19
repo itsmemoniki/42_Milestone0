@@ -1,18 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_itoa_extra.c                                    :+:      :+:    :+:   */
+/*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: msouza-c <msouza-c@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/18 19:07:42 by msouza-c          #+#    #+#             */
-/*   Updated: 2026/11/18 19:22:59 by msouza-c         ###   ########.fr       */
+/*   Updated: 2026/11/19 15:04:38 by msouza-c         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	count_digits(long n)
+static long	long_abs(long n)
+{
+	if (n < 0)
+		return (-n);
+	else
+		return (n);
+}
+
+static size_t	count_digits(long n)
 {
 	size_t	i;
 
@@ -32,12 +40,12 @@ size_t	count_digits(long n)
 	return (i);
 }
 
-char	*make_str(char *str, long n)
+static char	*make_str(char *str, long n)
 {
 	size_t	size;
 	long	nbr;
 
-	nbr = labs(n);
+	nbr = long_abs(n);
 	size = count_digits(n);
 	str[size] = '\0';
 	if (n == 0)

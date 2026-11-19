@@ -1,18 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strtrim_extra.c                                 :+:      :+:    :+:   */
+/*   ft_strtrim.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: msouza-c <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: msouza-c <msouza-c@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/18 19:17:57 by msouza-c          #+#    #+#             */
-/*   Updated: 2026/11/18 19:17:59 by msouza-c         ###   ########.fr       */
+/*   Updated: 2026/11/19 15:02:40 by msouza-c         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	isin_set(const char c, const char *set)
+static int	isin_set(const char c, const char *set)
 {
 	while (*set)
 	{

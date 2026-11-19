@@ -1,18 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_split_extra.c                                   :+:      :+:    :+:   */
+/*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: msouza-c <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: msouza-c <msouza-c@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/18 19:14:23 by msouza-c          #+#    #+#             */
-/*   Updated: 2026/11/18 19:14:24 by msouza-c         ###   ########.fr       */
+/*   Updated: 2026/11/19 15:03:42 by msouza-c         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	count_words(const char *s, char c)
+static int	count_words(const char *s, char c)
 {
 	int	words;
 
@@ -31,7 +31,7 @@ int	count_words(const char *s, char c)
 	return (words);
 }
 
-char	*split_word(const char *s, char c)
+static char	*split_word(const char *s, char c)
 {
 	char	*word;
 	size_t	word_len;
@@ -53,7 +53,7 @@ char	*split_word(const char *s, char c)
 	return (word);
 }
 
-void	free_words(char **words, size_t i_word)
+static void	free_words(char **words, size_t i_word)
 {
 	while (i_word > 0)
 	{
