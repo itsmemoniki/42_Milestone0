@@ -6,7 +6,7 @@
 /*   By: msouza-c <msouza-c@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/18 19:17:57 by msouza-c          #+#    #+#             */
-/*   Updated: 2026/11/19 15:02:40 by msouza-c         ###   ########.fr       */
+/*   Updated: 2026/11/19 17:44:42 by msouza-c         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,8 +16,9 @@ static int	isin_set(const char c, const char *set)
 {
 	while (*set)
 	{
-		if (c == *set++)
+		if (c == *set)
 			return (1);
+		set++;
 	}
 	return (0);
 }
@@ -40,7 +41,11 @@ char	*ft_strtrim(char const *s1, char const *set)
 		return (NULL);
 	i = 0;
 	while (start <= end)
-		trimmed[i++] = s1[start++];
+	{
+		trimmed[i] = s1[start];
+		i++;
+		start++;
+	}
 	trimmed[i] = '\0';
 	return (trimmed);
 }

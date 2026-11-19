@@ -6,7 +6,7 @@
 /*   By: msouza-c <msouza-c@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/30 17:35:47 by msouza-c          #+#    #+#             */
-/*   Updated: 2026/10/30 17:36:26 by msouza-c         ###   ########.fr       */
+/*   Updated: 2026/11/19 16:18:12 by msouza-c         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ void	ft_bzero(void *str, size_t n)
 	ptr = (unsigned char *)str;
 	while (i < n)
 	{
-		ptr[i] = '\0';
+		ptr[i] = 0;
 		i++;
 	}
 }

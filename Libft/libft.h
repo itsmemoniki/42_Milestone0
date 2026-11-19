@@ -6,7 +6,7 @@
 /*   By: msouza-c <msouza-c@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/28 13:47:50 by msouza-c          #+#    #+#             */
-/*   Updated: 2026/11/18 19:37:46 by msouza-c         ###   ########.fr       */
+/*   Updated: 2026/11/19 16:21:45 by msouza-c         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 
 # define LIBFT_H
 
+# include <stdint.h>
 # include <stdlib.h>
 # include <unistd.h>
 
@@ -45,7 +46,7 @@ int				ft_memcmp(const void *s1, const void *s2, size_t n);
 char			*ft_strnstr(const char *haystack,
 					const char *needle, size_t len);
 int				ft_atoi(const char *nptr);
-void			*ft_calloc(size_t n, size_t size);
+void			*ft_calloc(size_t nmemb, size_t size);
 char			*ft_strdup(const char *s);
 //check memory error
 char			*ft_substr(char const *s, unsigned int start, size_t len);

@@ -6,7 +6,7 @@
 /*   By: msouza-c <msouza-c@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/18 19:14:23 by msouza-c          #+#    #+#             */
-/*   Updated: 2026/11/19 15:03:42 by msouza-c         ###   ########.fr       */
+/*   Updated: 2026/11/19 16:09:09 by msouza-c         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -88,7 +88,7 @@ char	**ft_split(char const *s, char c)
 			i_word++;
 		}
 	}
-	words[i_word] = '\0';
+	words[i_word] = NULL;
 	return (words);
 }
 // #include <stdio.h>

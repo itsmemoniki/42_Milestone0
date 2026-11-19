@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strmapi_extra.c                                 :+:      :+:    :+:   */
+/*   ft_strmapi.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: msouza-c <msouza-c@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/18 19:16:42 by msouza-c          #+#    #+#             */
-/*   Updated: 2026/11/18 19:31:56 by msouza-c         ###   ########.fr       */
+/*   Updated: 2026/11/19 16:26:38 by msouza-c         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	size_t	i;
 	char	*ptr;
 
-	if (!s)
+	if (!s || !f)
 		return (NULL);
 	len = ft_strlen(s) + 1;
 	ptr = (char *) malloc(len * sizeof(char));
