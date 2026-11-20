@@ -1,35 +1,38 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_substr_extra.c                                  :+:      :+:    :+:   */
+/*   ft_substr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: msouza-c <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: msouza-c <msouza-c@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/18 19:18:13 by msouza-c          #+#    #+#             */
-/*   Updated: 2026/11/18 19:18:14 by msouza-c         ###   ########.fr       */
+/*   Updated: 2026/11/20 17:10:01 by msouza-c         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
+#include <stdio.h>
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
 	char	*subs;
-	size_t	coord;
+	// size_t	coord;
 	size_t	i;
 
 	if (!s)
 		return (NULL);
-	subs = (char *) malloc((len + 1) * sizeof(char));
+	// coord = start + len;
+	if (start >= ft_strlen(s))
+		len = 0;
+	if (len > ft_strlen(s)- start)
+		len = ft_strlen(s) - start;
+	subs = malloc((len + 1) * sizeof(char));
 	if (!subs)
 		return (NULL);
-	coord = start + len;
 	i = 0;
-	while (s[start] && start < (coord))
+	while (i < len)
 	{
-		subs[i] = s[start];
+		subs[i] = s[start + i];
 		i++;
-		start++;
 	}
 	subs[i] = '\0';
 	return (subs);
@@ -38,8 +41,8 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 // #include <stdio.h>
 // int main(void)
 // {
-// 	const char *str = "Hello monki bla bla!";
-// 	char *subs = ft_substr(str, 6, 5);
+// 	//const char *str = "Hello monki bla bla!";
+// 	char *subs = ft_substr("hola", -1, -1);
 // 	printf("%s\n", subs);
 // 	return (0);
 // }

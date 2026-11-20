@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strjoin_extra.c                                 :+:      :+:    :+:   */
+/*   ft_strjoin.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: msouza-c <msouza-c@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/18 19:15:49 by msouza-c          #+#    #+#             */
-/*   Updated: 2026/11/18 19:29:31 by msouza-c         ###   ########.fr       */
+/*   Updated: 2026/11/20 14:38:02 by msouza-c         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,8 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	char	*ptr;
 	size_t	strsize;
 
+	if (!s1 || !s2)
+		return (NULL);
 	strsize = ft_strlen(s1) + ft_strlen(s2);
 	str = (char *) malloc((strsize + 1) * sizeof(char));
 	if (!str)
