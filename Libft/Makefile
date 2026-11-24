@@ -24,13 +24,14 @@ all:			$(NAME)
 $(NAME):		$(OBJS)
 				ar rcs $(NAME) $(OBJS)
 
-%.o: %.c
-	$(CC) $(CFLAGS) -c $< -o $@
+%.o:			%.c
+				$(CC) $(CFLAGS) -c $< -o $@
 
 clean:
 				$(RM) $(OBJS)
 fclean:			clean
 				$(RM) $(NAME)
-re:			fclean $(NAME)	
+re:				fclean 
+				$(MAKE) $(NAME)
 
 .PHONY:			all clean fclean re

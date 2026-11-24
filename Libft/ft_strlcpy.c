@@ -34,13 +34,14 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t dsize)
 }
 
 // #include <stdio.h>
-// #include <bsd/string.h>
+// #include <string.h>
+// // #include <bsd/string.h>
 // int main(void)
 // {
-//     const char str1[] = "how are you";
-//     char dest1[15];
-//     const char str2[] = "how are you";
-//     char dest2[15];
-//     printf("%zu dest: %s\n", ft_strlcpy(dest1, str1, 0), dest1);
-// 	printf("%zu dest: %s\n", strlcpy(dest2, str2, 0), dest2);
+//     const char str1[] = "ola";
+//     char dest1[15] = "hi";
+//     const char str2[] = "ola";
+//     char dest2[15] = "hi";
+//     printf("%zu dest: %s\n", ft_strlcpy(dest1, str1, 5), dest1);
+// 	printf("%zu dest: %s\n", strlcpy(dest2, str2, 5), dest2);
 // }
