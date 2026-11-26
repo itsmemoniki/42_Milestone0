@@ -6,7 +6,7 @@
 /*   By: msouza-c <msouza-c@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/18 19:16:05 by msouza-c          #+#    #+#             */
-/*   Updated: 2026/11/18 19:31:09 by msouza-c         ###   ########.fr       */
+/*   Updated: 2026/11/25 15:57:49 by msouza-c         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,7 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 		return (dst_len + src_len);
 	}
 	else
-		return (size + src_len);
+		return (dst_len + src_len);
 }
 
 // #include <stdio.h>

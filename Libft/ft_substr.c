@@ -6,21 +6,19 @@
 /*   By: msouza-c <msouza-c@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/18 19:18:13 by msouza-c          #+#    #+#             */
-/*   Updated: 2026/11/20 17:10:01 by msouza-c         ###   ########.fr       */
+/*   Updated: 2026/11/25 12:24:39 by msouza-c         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
+
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
 	char	*subs;
-	// size_t	coord;
 	size_t	i;
 
 	if (!s)
 		return (NULL);
-	// coord = start + len;
 	if (start >= ft_strlen(s))
 		len = 0;
 	if (len > ft_strlen(s)- start)
